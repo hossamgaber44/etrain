@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 88%;
+    margin: auto;
+}
+.table_content{
+    margin: 14px auto;
+    overflow: auto;
+}
+/***** category *****/
+.category{
+    padding: 40px 0px;
+}

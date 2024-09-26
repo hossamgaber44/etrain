@@ -1,0 +1,199 @@
+/****  category ***/
+.page-of-title{
+    height: 66vh;
+    color: #ffffff;
+    letter-spacing: 3px;
+    background: #414040 ;
+    position: relative;
+}
+.page-of-title .page-title-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    text-align: center;
+}
+@media(max-width:500px){
+    .page-of-title .page-title-info h1{
+        font-size: 34px;
+    }
+}
+/**************************/
+/*    course details  *****/
+/**************************/
+
+.course-details-content {
+    justify-content: space-between;
+    align-items: start;
+}
+
+.course-details-content .course-details-info{
+    flex-basis: 60%;
+}
+.course-details-content .course-details-info  .course-details-image{
+    height: 400px;
+ }
+.course-details-content .course-details-info .course-details-description{
+    padding: 8px 12px;
+    color: #969494;
+}
+
+.course-details-content .trainer-course{
+    flex-basis: 38%;
+}
+.course-details-content .trainer-course .trainer-course-details{
+    padding: 22px 14px;
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(63, 63, 63);
+}
+
+.course-details-content .trainer-course .trainer-course-details .trainer-name ,
+.course-details-content .trainer-course .trainer-course-details .course-price{
+    justify-content: space-between;
+    padding: 12px ;
+}
+.course-details-content .trainer-course .trainer-course-details .trainer-course-details-line{
+    border-bottom: 1px solid rgb(158, 157, 157);
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+/* form*/
+.course-details-content .trainer-course form{
+    padding: 12px 0px;
+}
+
+.course-details-content .trainer-course form input{
+    width: 100%;
+    padding: 10px 8px;
+    border: none;
+    border: 1px solid  rgb(158, 157, 157);
+    border-radius: 8px;
+    margin: 8px 0px;
+}
+
+.course-details-content .trainer-course form button {
+    padding: 10px 8px;
+    border: none;
+    background: linear-gradient(270deg , #f7b600 0% ,#ff4723 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-transform:uppercase;
+    margin-top: 10px;
+}
+.course-details-content .trainer-course form button:hover {
+    background: linear-gradient(270deg ,#ff4723  0% ,#f7b600  100%);
+    color: #000000;
+}
+
+@media(max-width:880px){
+    .course-details-content{
+        flex-wrap: wrap;
+    }
+    .course-details-content .course-details-info{
+        flex-basis: 100%;
+    }
+    .course-details-content .trainer-course{
+        flex-basis: 100%;
+    }
+}
+
+/**************************/
+/******* contact  *****/
+/**************************/
+.contact{
+    margin: 28px 0px;
+}
+.contact .contact-content{
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact .contact-content form{
+    flex-basis: 64%;
+}
+.contact .contact-content form input,
+.contact .contact-content form textarea{
+    width: 100%;
+    border: 1px solid rgb(156, 156, 156);
+    outline: none;
+    padding: 10px 14px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.contact .contact-content form textarea{
+    height: 120px;
+}
+.contact .contact-content form .form-inputs{
+    justify-content: space-between;
+}
+.contact .contact-content form .form-inputs input{
+    flex-basis: 49%;
+}
+.contact .contact-content form .contact-btn{
+    padding: 10px 8px;
+    border: none;
+    background: linear-gradient(270deg , #f7b600 0% ,#ff4723 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.contact .contact-content form .contact-btn:hover {
+    background: linear-gradient(270deg ,#ff4723 0% ,#f7b600 100%);
+    color: #000000;
+}
+
+.contact .contact-content .contact-info{
+    flex-basis: 30%;
+}
+.contact .contact-content .contact-info .contact-info-content{
+    justify-content: start;
+    padding: 10px;
+}
+.contact .contact-content .contact-info .contact-info-content i{
+    font-size: 18px;
+    margin-right: 26px;
+}
+
+.contact .contact-content .contact-info .contact-info-content span:last-of-type{
+    font-size: 15px;
+    color: #414040;
+    display: block;
+    text-transform: capitalize;
+}
+.contact .contact-content .contact-info .contact-info-content span:first-of-type{
+    font-size: 18px;
+    display: block;
+    text-transform: capitalize;
+    margin: 2px 0px ;
+}
+@media(max-width:800px){
+    .contact .contact-content{
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-content form ,
+    .contact .contact-content .contact-info{
+        flex-basis: 100%;
+    }
+
+}
+
+@media(max-width:580px){
+    .contact .contact-content form .form-inputs{
+       flex-wrap: wrap;
+    }
+
+    .contact .contact-content form .form-inputs input{
+        flex-basis: 100%;
+     }
+}
